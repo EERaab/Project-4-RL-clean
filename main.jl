@@ -11,13 +11,13 @@ end
 abstract type QhatType
 end
 
-@pyinclude("gridmap_generator.py");
+#@pyinclude("gridmap_generator.py");
 
 include("functions/utils.jl")
 include("functions/environments and learning.jl")
 include("functions/basic features.jl")
 include("functions/simple terrain.jl")
-include("functions/plotting total mapping.jl")
+include("functions/memory intesive plot functions.jl")
 
 #These are enough for an "open" gridworld
 include("functions/open gridworld.jl")
